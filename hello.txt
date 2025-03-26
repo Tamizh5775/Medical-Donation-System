@@ -1,0 +1,36 @@
+{/* Available Donations */}
+            
+<div className="mt-4">
+                <h3 className="text-center">Available Donations</h3>
+                <table className="table table-bordered mt-3">
+                    <thead className="table-dark">
+                        <tr>
+                            <th>Name</th>
+                            <th>Quantity</th>
+                            <th>Expire Date</th>
+                            <th>Address</th>
+                            <th>Donating Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {filteredDonations.map((donation) => (
+                            <tr key={donation.id}>
+                                <td>{donation.name}</td>
+                                <td>{donation.quantity}</td>
+                                <td>{donation.expire_date}</td>
+                                <td>{donation.address}</td>
+                                <td>{donation.donating_date}</td>
+                                <td>
+                                    <button 
+                                        className="btn btn-warning btn-sm"
+                                        onClick={() => navigate(`/request-donation/${donation.id}`)}
+                                    >
+                                        Request
+                                    </button>
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>

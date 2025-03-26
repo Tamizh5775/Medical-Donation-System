@@ -1,0 +1,81 @@
+/* About Page Styles */
+body {
+    background-size: cover;
+    color: #333;
+  }
+  
+  .container {
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1, h2, h3 {
+    color: #007bff;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .img-fluid:hover {
+    transform: scale(1.05);
+  }
+  
+  .rounded-circle {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid #007bff;
+  }
+  
+  /* Hover Effect for Team Members */
+  .hover-zoom {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .hover-zoom:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Fade-in animation */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Slide-in Animations */
+  .slide-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInLeft 1s ease-in forwards;
+  }
+  
+  @keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  .slide-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideInRight 1s ease-in forwards;
+  }
+  
+  @keyframes slideInRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
